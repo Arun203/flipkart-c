@@ -1,0 +1,40 @@
+.notes_container {
+  display: flex;
+  line-height: 1.6;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.brands {
+  padding: 20px;
+  color: #565656;
+  font-weight: 500;
+}
+
+.brands h1 {
+  font-size: 16px;
+}
+
+.brands .small {
+  font-size: 12px;
+}
+
+.span_dark {
+  color: #848484;
+  font-weight: 500;
+  margin-top: 14px;
+  padding: 14px 0;
+}
+
+.span_light {
+  color: #565656;
+  margin-left: 3px;
+}
+
+@media (max-width: 768px) {
+  .notes_container {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.box_container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0 0 7px;
+}
+
+.box_items {
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.box_container img {
+  background-color: white;
+  padding: 5px;
+}
+
+@media (max-width: 450px) {
+  .box_container {
+    margin-top: -60px;
+  }
+
+  .box_container img {
+    padding: 5px;
+  }
+}

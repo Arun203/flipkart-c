@@ -1,0 +1,55 @@
+.deals_container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.deals_slide {
+  position: relative;
+  margin: 0;
+  width: 80%;
+  background: white;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.heading_button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 12px;
+  cursor: pointer;
+  background-color: #2874f0;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+button:focus {
+  outline: none;
+}
+
+.deals-box {
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 768px) {
+  .deals-box,
+  .deals_slide {
+    display: none;
+  }
+}

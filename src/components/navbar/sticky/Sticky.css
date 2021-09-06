@@ -1,0 +1,126 @@
+.sticky {
+  width: 100%;
+  position: fixed;
+  height: 56px;
+  top: 0;
+  left: 0;
+  background-color: #2874f0;
+  z-index: 10000;
+  -webkit-box-shadow: -8px -8px 4px 10px rgb(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px -8px 4px 10px rgb(0, 0, 0, 0.75);
+  box-shadow: -8px -8px 4px 10px rgb(0, 0, 0, 0.75);
+}
+
+.sticky_nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.sticky_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sticky_logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.sticky_nav_items a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.space {
+  flex: 1;
+}
+
+.sticky_nav_items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sticky_nav_item {
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.sticky_nav_item.login {
+  background-color: #fff;
+}
+
+.sticky_nav_item.login a {
+  color: #2874f0;
+}
+
+.search-container {
+  display: flex;
+  margin: -7px 7rem 0 2rem;
+  box-shadow: -2px 4px 4px -3px rgb(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 4px 4px -3px rgb(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 4px 4px -3px rgb(0, 0, 0, 0.75);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.login:hover .dropdown-content {
+  display: block;
+}
+
+.more:hover .dropdown-content {
+  display: block;
+}
+
+.search-container input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container input[type="text"]:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .sticky_nav_items {
+    display: none;
+  }
+
+  .space {
+    flex: 0;
+    min-width: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .sticky_button {
+    display: none;
+  }
+}
